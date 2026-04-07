@@ -29,16 +29,11 @@ function calcular() {
     // 6. Payback (meses)
     const payback = custoSistema / economiaMensal;
 
-    // 7. Redução de CO2 (kg/ano)
-    const fatorCO2 = 0.084; // Brasil médio kg/kWh
-    const reducaoCO2 = consumo * 12 * fatorCO2;
-
     // Saída
     document.getElementById("resultado").innerHTML = `
         <p><strong>Sistema necessário:</strong> ${sistemaKWp.toFixed(2)} kWp</p>
         <p><strong>Economia mensal:</strong> R$ ${economiaMensal.toFixed(2)}</p>
         <p><strong>Economia anual:</strong> R$ ${economiaAnual.toFixed(2)}</p>
         <p><strong>Payback:</strong> ${payback.toFixed(1)} meses</p>
-        <p><strong>Redução de CO₂:</strong> ${reducaoCO2.toFixed(2)} kg/ano</p>
     `;
 }
