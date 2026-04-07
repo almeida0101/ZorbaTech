@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Solar</title>
+    <link rel="stylesheet" href="css/styles-js.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora Solar</h1>
+
+    <input id="consumo" placeholder="Consumo mensal (kWh)" type="number">
+    <input id="conta" placeholder="Valor mensal da conta de luz (R$)" type="number">
+    <input id="custoSistema" placeholder="Seu Orçamento/Investimento (R$)" type="number">
+    <input id="irradiacao" placeholder="Irradiação (kWh/m²/dia)" type="number">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
