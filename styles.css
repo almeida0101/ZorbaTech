@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
 
-/* Estilo global */
-body {
-    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Roboto */
-    margin: 0;
-    padding: 0;
-    background-color: #0f2a3a;
-    color: #333;
-}
-
 /* Estilo do cabeçalho */
 header {
-    background-image: url('placas-energia.jpg'); 
+    background-image: url('placas-energia.png'); 
     background-size: cover; 
     background-position: center;
     padding: 100px 30px;
@@ -27,7 +18,7 @@ header h1 {
     font-size: 95px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #0f2a3a;
+    color: #ffffff;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
     animation: fadeInUp 1s ease;
@@ -80,6 +71,15 @@ header h1 {
       transform: translateY(0);
     }
   }
+
+  /* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif; /* Aplicando a fonte Roboto */
+    margin: 0;
+    padding: 0;
+    background-color: #0f2a3a;
+    color: #333;
+}
 
   /* Estilo das seções */
 main {
