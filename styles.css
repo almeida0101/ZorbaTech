@@ -57,7 +57,7 @@ header h1 {
     transform: scale(1.08);
     background-color: #16a34a;
     box-shadow: 0 8px 20px rgba(8, 71, 3, 0.4);
-    color:yellow;
+    color:black;
   }
 
 /* Animação suave ao carregar */
