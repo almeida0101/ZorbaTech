@@ -1,76 +1,113 @@
-/* Reset básico */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+/* ===== CONTAINER ===== */
+.page-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
 }
 
-/* Container principal */
-.container {
+/* ===== CARD ===== */
+section {
+    max-width: 700px;
     width: 100%;
-    max-width: 500px;
-    background: #0f2a3a;
+    background: #ffffff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* Título */
-.container h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 26px;
-}
-
-/* Inputs */
+/* ===== INPUTS ===== */
 input {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    font-size: 14px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+
+    /* CORREÇÃO AQUI */
+    color: #000;                /* texto digitado */
+    background-color: #fff;     /* fundo */
 }
 
-/* Botão */
+/* placeholder visível */
+input::placeholder {
+    color: #888;
+}
+
+/* quando clica */
+input:focus {
+    border-color: #16a34a;
+    outline: none;
+    box-shadow: 0 0 5px #16a34a;
+}
+
+/* ===== BOTÃO ===== */
 button {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background: #22c55e;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #000;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 button:hover {
     background: #16a34a;
 }
 
-/* Resultado */
-#resultado {
+/* ===== RESULTADO ===== */
+.resultado-box {
     margin-top: 20px;
-    padding: 15px;
-    background: #0f2a3a;
-    border-radius: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    color: #000;
+    border-radius: 12px;
+    animation: fadeIn 0.4s ease;
 }
 
-#resultado p {
+.resultado-box h3 {
+    color: #16a34a;
+    margin-bottom: 10px;
+}
+
+.resultado-box p {
     margin-bottom: 8px;
-    font-size: 14px;
+}
+
+.destaque {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+/* ===== BOTÕES ===== */
+.acoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

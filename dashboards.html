@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard - Zorbatech</title>
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS DO DASHBOARD -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-    <h1>hello world</h1>
+
+<header>
+    <h1>Zorbatech</h1>
+</header>
+
+<main class="page-container">
+
+    <section>
+        <h2>Dashboard de Resultados</h2>
+
+        <!-- CARDS -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Economia Mensal</h3>
+                <p id="cardMensal">R$ 0</p>
+            </div>
+
+            <div class="card">
+                <h3>Economia Anual</h3>
+                <p id="cardAnual">R$ 0</p>
+            </div>
+
+            <div class="card">
+                <h3>Payback</h3>
+                <p id="cardPayback">0 meses</p>
+            </div>
+
+            <div class="card">
+                <h3>CO₂ Evitado</h3>
+                <p id="cardCO2">0 kg</p>
+            </div>
+
+        </div>
+
+        <!-- GRÁFICOS -->
+        <div class="graficos">
+
+    <div class="grafico-box">
+        <canvas id="graficoEconomia"></canvas>
+    </div>
+
+    <div class="grafico-box">
+        <canvas id="graficoPayback"></canvas>
+    </div>
+
+    <div class="grafico-box">
+        <canvas id="graficoPizza"></canvas>
+    </div>
+
+    <div class="grafico-box">
+    <canvas id="graficoLinhaComparativa"></canvas>
+</div>
+
+</div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Zorbatech. Todos os direitos reservados.</p>
+</footer>
+
+<!-- JS -->
+<script src="js/dashboard.js"></script>
+
 </body>
 </html>

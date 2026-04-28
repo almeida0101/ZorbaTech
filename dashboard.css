@@ -1,0 +1,69 @@
+/* HERDA FONTE GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TÍTULO */
+h2 {
+    font-size: 42px;
+    color: #16a34a;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #16a34a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* GRÁFICOS */
+.graficos {
+    display: grid;
+    gap: 25px;
+}
+
+.grafico-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+canvas {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+/* RESPONSIVO */
+@media (min-width: 1024px) {
+    .graficos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
